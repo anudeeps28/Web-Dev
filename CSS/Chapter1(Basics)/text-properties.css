@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+    text-decoration: blue dotted underline;
+    letter-spacing: 5px;
+    font-size: 50px;
+}
+
+h3 {
+    text-align: right;
+    font-weight: bold; /* 700 */
+    text-decoration: red wavy line-through;
+}
+
+h2 {
+    font-weight: normal; /* 400 */
+    text-decoration: overline;
+    
+    /* giving a priority of fonts to use in case the given font is not available */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+/* removing underline from link */
+a {
+    text-decoration: none;
+}
+
+p {
+    line-height: 2;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkboxes and Radio Buttons</title>
+</head>
+<body>
+    <form action="/server">
+        <div>
+            <input type="checkbox" name="age" id="age" checked>
+            <label for="age">I am 18+</label>
+    
+            <input type="checkbox" name="age2" id="age2">
+            <label for="age2">I am 40+</label>
+
+            <button>Submit</button>
+        </div>
+
+        <br>
+
+        <div>
+            <!-- all of them are grouped together because the "name" attribute is the same-->
+            <input type="radio" name="fruit" id="apple" value="apple"> 
+            <label for="fruit">Apple</label>
+            <input type="radio" name="fruit" id="mango" value="mango">
+            <label for="mango">Mango</label>
+            <input type="radio" name="fruit" id="banana" value="banana">
+            <label for="banana">Banana</label>
+
+            <!-- NOTE: "value" attributes shows what is being submitted to "name" -->
+        </div>
+
+        <br>
+
+        <!-- grouping multiple checkboxes together -->
+        <div>
+            Chose your subjects:
+            <input type="checkbox" name="subjects" id="Math" value="Math">
+            <label for="Math">Math</label>
+            <input type="checkbox" name="subjects" id="Physics" value="Physics">
+            <label for="Physics">Physics</label>
+            <input type="checkbox" name="subjects" id="Biology" value="Biology">
+            <label for="Biology">Biology</label>
+        </div>
+        <!-- drowpdowns-->
+
+        <div>
+            <select name="student" id="student">
+                <option value="stu">Student</option>
+                <option value="dev">Developer</option>
+            </select>
+            <button>Submit</button>
+        </div>
+        
+        <!-- using range element -->
+        <div>
+            <input type="range" name="volume" min="0" max="100" id="vol">
+            <label for="volume">Select your volume level</label>
+            <!-- using steps -->
+            <input type="range" name="bass" min="0" max="10" id="bas" step="2">
+            <label for="bass">Select your bass level</label>
+            <!-- giving default value -->
+            <input type="range" name="trebble" min="0" max="30" id="treb" step="5" value="25">
+            <label for="trebble">Select your trebble level</label>
+        </div>
+
+        <!-- using text area -->
+         <div>
+            <label for="fdbk">Please give your valuable feedback</label>
+            <textarea name="feedback" id="fdbk" placeholder="write your feedback"></textarea>
+         </div>
+
+    </form>
+</body>
+</html>
