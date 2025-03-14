@@ -1,0 +1,18 @@
+div {
+    background-color: yellow;
+}
+
+form {
+    background-color: red;
+}
+
+/*
+buttons and inputs don't inherit by defaul
+*/
+button {
+    background-color: inherit;
+}
+
+input {
+    background-color: inherit;
+}

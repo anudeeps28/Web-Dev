@@ -29,3 +29,94 @@ h1, h3 {
     background-color: green;
     color: aliceblue;
  }
+
+ /* descendent selector */
+ .post a { /* class name followed by element */
+    color: purple;
+    background-color: yellow;
+
+ }
+
+ nav ul li a { /* "nav a" will give the same result */
+    color: pink; 
+ }
+
+ /* sibling combinator */
+ p + h3 { /* all the h3s which come after a p will have this property */
+    text-decoration: underline;
+ }
+
+ .upvote + button {
+    background-color: cornflowerblue;
+ }
+
+/* child combinator = just goes one level down */
+div > input { /* all the inputs inside the divs will have this property */
+    background-color: darksalmon;
+}
+
+/* attribute selector */
+input[type="text"] {
+    color: green;
+}
+
+input[type="password"] {
+    color: red;
+}
+
+#myId p {
+    color: green;
+} /* OR */
+div[id="myId"] {
+    color: green;
+}
+
+/* 
+pseudo class implementation 
+---------------------------------
+*/
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+h3:hover {
+    text-decoration: overline;
+}
+
+button:active {
+    background-color: pink;
+}
+
+p:active {
+    font-weight: bold;
+    color: green;
+}
+
+input[type="radio"]:checked + label {
+    color: red;
+    font-weight: bold;
+}
+
+div:nth-of-type(2n) {
+    background-color: bisque;
+}
+/* 
+---------------------------------
+*/
+/* 
+pseudo elements implementation 
+---------------------------------
+*/
+h1::first-letter {
+    color: green;
+}
+
+p::first-line {
+    color: purple;
+}
+
+p::selection {
+    background-color: lemonchiffon;
+}
