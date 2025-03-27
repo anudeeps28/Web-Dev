@@ -1,0 +1,57 @@
+.container {
+    width: 600px;
+    height: 300px;
+    background-color: yellow;
+    /* display type = grid
+    display: grid; */
+
+    /* to treat this grid line an inline element */
+    display: inline-grid;
+    
+    /* grid-template: used for defining rows and colums */
+    grid-template-rows: 50px 50px 50px; 
+    grid-template-columns: 200px 200px 200px;
+    
+    /* grid-template using 'repeat' */
+    grid-template-rows: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr); /* the same as 1fr 1fr 1fr */
+    
+    /* row-gap and column-gap */
+    /* row-gap: 10px;
+    column-gap: 30px; */
+    grid-gap: 10px 30px;
+
+    /* grid-properties: can take values start, end and center */
+    justify-items: center;
+    align-items: center;
+
+    /* place-items: used to set both justify and align properties together
+    ex: place-items: start */
+
+}
+
+/* grid-column and grid-row */
+.one {
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+    /* grid-column: 1/3; --> from 1 to 3
+    grid-column: 1/ span 3 --> starting at 1, going 3 places ahead (will go till 4) */ 
+    justify-self: end;
+}
+
+.two {
+    /* grid-row: 1/2; */
+    justify-self: end;
+    
+    /* place-self: used to set both justify and align properties together 
+    place-self: end */
+}
+
+.item {
+    width: 100px;
+    height: 50px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+    
+}

@@ -1,0 +1,39 @@
+/* 3-z-index.css */
+
+.container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 2px solid #333;
+  margin: 20px auto;
+}
+
+.box1 {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 150px;
+  height: 150px;
+  background-color: lightblue;
+  z-index: 1; /* Lower stacking order */
+}
+
+.box2 {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 150px;
+  height: 150px;
+  background-color: lightcoral;
+  z-index: 2; /* Higher stacking order */
+}
+
+.box3 {
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  width: 150px;
+  height: 150px;
+  background-color: lightgreen;
+  /* z-index not specified; defaults to auto */
+}
