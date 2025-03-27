@@ -1,0 +1,27 @@
+/* parent div */
+#outer {
+    background-color: pink;
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+    font-size: 20px;
+}
+
+/* child div */
+#inner {
+    height: 100px;
+    width: 100px;
+    background-color: skyblue;
+    /* font size is set relative to the font size of parent div */
+    font-size: 1.5em; 
+    /* padding is set relative to the font size of this child div itself */
+    padding: 0.5em;
+}
+
+button {
+    font-size: 20px;
+    border-radius: 20px;
+    border: 5px solid green;
+    padding-left: 1em;
+    padding-right: 1em;
+}

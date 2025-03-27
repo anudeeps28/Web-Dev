@@ -1,0 +1,26 @@
+h2 {
+    display: inline;
+    background-color: pink;
+}
+
+#span1 {
+    display: block;
+    background-color: yellowgreen;
+}
+
+#INLINE {
+    border: 2px solid black;
+    height: 100px; /* will not be set in span */
+    width: 200px; /* will not be set in span */
+    padding: 50px; /* will only be set in left or right */
+    margin: 10px;/* will only be set in left or right */
+
+}
+
+div {
+    border: 2px solid black;
+    height: 100px; 
+    width: 200px; 
+    padding: 50px; 
+    margin: 10px;
+}

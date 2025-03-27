@@ -1,0 +1,15 @@
+/* will apply just on the color */
+#alpha {
+    height: 100px;
+    width: 100px;
+    background-color: rgba(94, 255, 0, 0.654)
+}
+
+/* will apply on the entire element */
+#opacity {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    opacity: 0.5; 
+
+}

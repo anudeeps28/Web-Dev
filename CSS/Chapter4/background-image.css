@@ -1,0 +1,24 @@
+div {
+    height: 200px;
+    width: 400px;
+    background-color: lightgreen;
+    margin: 10px auto;
+}
+
+/* contain size */
+#one {
+    background-image: url(images/image1);
+    background-size: contain
+}
+
+/* cover size */
+#two {
+    background-image: url(images/image2);
+    background-size: cover
+}
+
+/* auto */
+#three {
+    background-image: url(images/image3);
+    background-size: auto
+}
