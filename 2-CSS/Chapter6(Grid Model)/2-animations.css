@@ -1,0 +1,61 @@
+.Box {
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+    
+    /* writing animation properties */
+    /* animation-name: widthAnimate;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count: 3; 
+    animation-direction: normal;  */
+    animation: colorAnimate 4s ease-in 0s 3 normal;
+}
+
+/* template/blueprint of animation */
+@keyframes fontAnimation {
+    from { font-size: 20px;
+    }
+    to {font-size: 40px;}
+}
+
+/* blueprint for animating color */
+@keyframes colorAnimate {
+    from {
+        background-color: green;
+    }
+    to {
+        background-color: blue;
+    }
+}
+
+/* another animation blueprint */
+@keyframes widthAnimate {
+    from {
+        width: 10px;
+        background-color: green;
+    }
+    to {
+        width: 400px;
+        background-color: yellow;
+        border-radius: 15px;
+    }
+}
+
+/* using percentages to show different stages of the animation process */
+@keyframes colorAnimate {
+    0% {
+        background-color: green;
+    }
+    50% {
+        background-color: yellow;
+    }
+    80% {
+        background-color: red;
+    }
+    100% {
+        background-color: blue;
+    }
+    
+}
