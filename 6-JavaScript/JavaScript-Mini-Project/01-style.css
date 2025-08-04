@@ -1,0 +1,19 @@
+#outer {
+    padding: 50px;
+    background-color: lightblue;
+    border: 2px solid blue;
+    margin: 20px;
+}
+
+#inner {
+    padding: 30px;
+    background-color: lightgreen;
+    border: 2px solid green;
+}
+
+#button {
+    padding: 10px 20px;
+    background-color: lightcoral;
+    border: 2px solid red;
+    cursor: pointer;
+}
